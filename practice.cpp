@@ -1,3 +1,4 @@
+
 // priority_queue::emplace
 #include <bits/stdc++.h>
 using namespace std;
@@ -23,4 +24,3 @@ int main ()
   std::cout << '\n';
 
   return 0;
-}  
