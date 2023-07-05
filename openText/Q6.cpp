@@ -1,33 +1,42 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// struct myPair {
+//   char character;
+//   int frequency;
+// };
+
 int main(int argc, char **argv) {
-  string a = "baaabbaabbba";
+  string a = "bbaaabbaaabba";
   int n = a.size();
   int cA = 0;
   int cB = 0;
-  string r = "";
+  vector<pair<char, int>> pairs;
   for (int i = 0; i < (n); ++i) {
     if (a[i] == 'a') {
-      r = r + "a";
       cA = 1;
-      while (a[i] == a[i + 1] && a[i] != NULL) {
+      while (a[i] == a[i + 1] && a[i] != '\0') {
         cA++;
         i++;
       }
-      r = r + to_string(cA);
+      pairs.push_back({'a', cA});
     }
     if (a[i] == 'b') {
-      r = r + "b";
       cB = 1;
-      while (a[i] == a[i + 1] && a[i] != NULL) {
+      while (a[i] == a[i + 1] && a[i] != '\0') {
         cB++;
         i++;
       }
-      r = r + to_string(cB);
+      pairs.push_back({'b', cB});
     }
   }
 
-  cout << r << endl;
+  int swaps = 0;
+  for (auto &i : pairs) {
+    swaps = swaps + i.second / 3;
+  }
+
+  cout << "Swaps = " << swaps << endl;
+
   return 0;
 }
