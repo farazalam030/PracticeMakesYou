@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// struct myPair {
-//   char character;
-//   int frequency;
-// };
+struct myPair {
+  char character;
+  int frequency;
+};
 
 int main(int argc, char **argv) {
   string a = "bbaaabbaaabba";
