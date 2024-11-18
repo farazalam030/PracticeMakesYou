@@ -1,5 +1,7 @@
 /*
-array = each element occcurs twice only one element occurs only once
+In an array = each element occcurs twice only one element occurs only once
+Find the single element.
+
 */
 
 #include <bits/stdc++.h>

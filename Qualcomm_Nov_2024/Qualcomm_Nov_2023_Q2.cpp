@@ -1,6 +1,6 @@
 /*
-sorted array
-target sum = 70;
+Given sorted array and target sum T;
+Find the the numbers whose sum is T in array
 */
 
 #include <bits/stdc++.h>
