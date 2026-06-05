@@ -1,8 +1,8 @@
-amt=40e5
+amt=44e5
 # print ("amtInvested=", amt)
 rate=10
 zakaat=0
-print ("Initial Investment = INR %d , Rate/Month=%d" % (amt,rate))
+print ("Initial Investment = INR %d , Rate/Month=%.2f" % (amt,rate))
 
 print ("TIME, Final_Amount(INR),tax (INR), Zakaat(INR)")
 for i in range(12*15):
